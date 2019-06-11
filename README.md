@@ -164,10 +164,6 @@ https://scikit-learn.org/stable/modules/naive_bayes.html
     (iii) X and Y conditionalyy independent. 
     Linear Regression = Gaussian Naive Bayes  + Bernouli
     
-    
-   
-   
-   
    
    
    
