@@ -94,7 +94,7 @@ YiWtxi : +ve so plane is correctly classifies. if <0 means incorrectly classifie
 Outlier can mess up the data.   
 
 ### Squashing in LR:
-instead of using signed dist directly, if signed dist is small, use as it, and if singed dist is large maker it smaller value. 
+instead of using signed distrubition directly, if signed dist is small, use as it, and if singed dist is large maker it smaller value. 
 
  
 
