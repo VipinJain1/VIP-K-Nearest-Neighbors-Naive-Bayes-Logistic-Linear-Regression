@@ -114,9 +114,65 @@ https://scikit-learn.org/stable/modules/naive_bayes.html
    log(x) is defined when x>0  it is monotonic function. try plot (log(x)) on google.
     
    
+   ### Optimization Equations:
+   W" = ArgMin( Sum (log(1+ E(-Yi W(t) Xi))
+   W = {w1,w2,w3,w4....wn}
+   w is a feature. every feature I have weight associated. 
+   if W(t) X >0 then Y is positive else Y is negative.
    
-  
-
+   ### Weight Vector:
+    Weight vector is a D dim points.
+    W = {w1,w2,ws3....wn} we have D features. 
+    I have f1,f2,f3...fn , for every feature I have weight associated. 
+    Xq -> Yq
+    if W(t) X >0 then Y is positive else Y is negative.
+    If W(t) Xq >0 then Yq =1 else Y=-1
+    If weight of X increases, probability of Y also increases. 
+    
+   ### Regularization: Overfitting and Underfitting:
+   
+   Zi = Yi Wi(t) Xi , W Transpose.
+   if I pick W such that:
+   (a) all traning  points are correctly classified.
+   (b) Zi -> infinity. Wi has to be + infinity or - infinity.   We get best fit. 
+   
+   Overfitting  - doing perfect job. 
+   
+   #### Regularization
+    W* = ArgMin ( Sum ( Log (1+exp(-Yi W(t) Xi)))) + Lambda Wt * W we are minimizing both. 
+    Lambda part is regularization. first term is the loss term. 
+    
+   ### Sparsity:
+    W = w1,w,2,w3....wn
+    Solution to LR is set to be sparse  if many Ws are zero. 
+    if W vectror is sparse, solution of LR is also sparse.
+    L1 regularization creates sparsity since weight set to zero.
+   
+   #### Elastic-Net
+   Use L1 norm and L2 norm
+   W* = ArgMin ( Sum ( Log (1+exp(-Yi W(t) Xi)))) + Lambda Wt * W  + lambda ||W square||
+   
+   ## Probabilistic Interpretation or derivation of Logistic Regression:
+   
+   One way is geometry and simple algebra. another way is probability and third way is loss minimization.
+   
+   Naice Bayes:
+    (i) if features are real valued, we had gaussian dist.
+    (ii) Class label is random var.
+    
+    Read book  https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf
+    (iii) X and Y conditionalyy independent. 
+    Linear Regression = Gaussian Naive Bayes  + Bernouli
+    
+    
+   
+   
+   
+   
+   
+   
+    
+   
 
  
 
