@@ -80,35 +80,42 @@ https://scikit-learn.org/stable/modules/naive_bayes.html
 
 ### Logistic Regression (LR)
 
-It is a classification technique.  Geometric based, NB was probabilistic based. 
-It is a classification technique.  Geometric based, NB was probabilistic based. 
-LR can be derived by geometric, probability or loss-function, but best is geometric. There are three ways to interperate.  
-If data is linearly separable in a plane by line. line is  y =mx+c , in plan = W(transpose)x+b =0,
-x and W are vectors, b is a scaler, 
-Assumption: - Classes are almost linearly separable. That is the best way to use LR.
-NB has conditional independence. K-NN is neighbor based. In LR, plane is divided in two parts, plus or minus points.
-Task is to find a plane, that will separate positive and negative points.
+  It is a classification technique.  Geometric based, NB was probabilistic based. 
+  It is a classification technique.  Geometric based, NB was probabilistic based. 
+  LR can be derived by geometric, probability or loss-function, but best is geometric. There are three ways to interperate.  
+  If data is linearly separable in a plane by line. line is  y =mx+c , in plan = W(transpose)x+b =0,
+  x and W are vectors, b is a scaler, 
+  Assumption: - Classes are almost linearly separable. That is the best way to use LR.
+  NB has conditional independence. K-NN is neighbor based. In LR, plane is divided in two parts, plus or minus points.
+  Task is to find a plane, that will separate positive and negative points.
 
-if Wtxi >0 Yi =+1  if   Wtxi <0 Yi =-1 , LR is decision based.
-Optimal W =  argMax(sum (YiWtXi))  --> Get Max value. 
-LR can have many planes, we need best Wi, best plane. This is optimization problem.
-Wtxi is the distance from Xi to the plane.
-YiW(transpose)xi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
-Outlier can mess up the data. In LR we would want as many as positive values for positive place and as many as negative values for negative plane. This the optimization function of LR. Find out the optmimal W (max values of + and -)
+  if Wtxi >0 Yi =+1  if   Wtxi <0 Yi =-1 , LR is decision based.
+  Optimal W =  argMax(sum (YiWtXi))  --> Get Max value. 
+  LR can have many planes, we need best Wi, best plane. This is optimization problem.
+  Wtxi is the distance from Xi to the plane.
+  YiW(transpose)xi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
+  Outlier can mess up the data. In LR we would want as many as positive values for positive place and as many as negative values for negative plane. This the optimization function of LR. Find out the optmimal W (max values of + and -)
 
-Extreme outlier points can impact the model badly. max sum is out outlier prone. 
-So our above fucntion has to fix to take care of outlier. Squashing is used for that purpose.
+  Extreme outlier points can impact the model badly. max sum is out outlier prone. 
+  So our above fucntion has to fix to take care of outlier. Squashing is used for that purpose.
 
-### Squashing in LR:
-Instead of using signed distances directly, if signed distance is small, use as it, and if singed distance is large, make it a smaller value. If distance is huge, I wil not use huge value, I will much smaller.
-so we remove outlier.
-We use Sigmoid Function.
+  ### Squashing in LR:
+  Instead of using signed distances directly, if signed distance is small, use as it, and if singed distance is large, make it a smaller value. If distance is huge, I wil not use huge value, I will much smaller.
+  so we remove outlier.
+  We use Sigmoid Function.
 
-Try Plot(1/1+e^-x)  to see the impact. X is the signed distance. 
-sigma (0) = 0.5
-Values are in between 0 to 1 instead of -infinity to infinity. So, it comes to probabilistic interpretation.
+  Try Plot(1/1+e^-x)  to see the impact. X is the signed distance. 
+  sigma (0) = 0.5
+  Values are in between 0 to 1 instead of -infinity to infinity. So, it comes to probabilistic interpretation.
 
-
+  ### Monotonic Function:
+   G(x) increases if x increases.
+   if x1 > x2 then g(x1) > g(x2) then g(x) is set to be monotonic funtion. 
+   log(x) is defined when x>0  it is monotonic function. try plot (log(x)) on google.
+    
+   
+   
+  
 
 
  
