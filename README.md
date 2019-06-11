@@ -96,9 +96,23 @@ Wtxi is the distance from Xi to the plane.
 YiW(transpose)xi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
 Outlier can mess up the data. In LR we would want as many as positive values for positive place and as many as negative values for negative plane. This the optimization function of LR. Find out the optmimal W (max values of + and -)
 
+Extreme outlier points can impact the model badly. max sum is out outlier prone. 
+So our above fucntion has to fix to take care of outlier. Squashing is used for that purpose.
 
 ### Squashing in LR:
-instead of using signed distrubition directly, if signed dist is small, use as it, and if singed dist is large maker it smaller value. 
+Instead of using signed distances directly, if signed distance is small, use as it, and if singed distance is large, make it a smaller value. If distance is huge, I wil not use huge value, I will much smaller.
+so we remove outlier.
+We use Sigmoid Function.
+
+Try Plot(1/1+e^-x)  to see the impact. X is the signed distance. 
+sigma (0) = 0.5
+Values are in between 0 to 1. so it comes to probabilitcs interpration. 
+
+
+ 
+
+
+
 
  
 
