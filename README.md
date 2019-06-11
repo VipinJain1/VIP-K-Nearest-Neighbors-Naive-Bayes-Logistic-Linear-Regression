@@ -78,19 +78,21 @@ knn we need whole data at run time.
 ## Scikit-learn  very good doc. 
 https://scikit-learn.org/stable/modules/naive_bayes.html
 
-### Logistic Regression
-It is a classification technique.  geometric based, NB was probabilistic based. 
-LR can be derived by geometric, probability and loss-function.  but best is geometric. 
-If data is linearly separable in a plane by line. line  is  y =mx+c , in plan = W(transpose)x+b =0
-, x and W are vectors. , b is a scaler, 
-Assumption:- Classes are almost linearly separable.  
-NB has conditional independence. K-NN is neighbor based.  in LR, plane are divided in two parts,  plus or minus points.
+### *****************************Logistic Regression (LR)**************************************
+It is a classification technique.  Geometric based, NB was probabilistic based. 
+It is a classification technique.  Geometric based, NB was probabilistic based. 
+LR can be derived by geometric, probability or loss-function, but best is geometric. There are three ways to interperate.  
+If data is linearly separable in a plane by line. line is  y =mx+c , in plan = W(transpose)x+b =0,
+x and W are vectors, b is a scaler, 
+Assumption: - Classes are almost linearly separable. That is the best way to use LR.
+NB has conditional independence. K-NN is neighbor based. In LR, plane is divided in two parts, plus or minus points.
+Task is to find a plane, that will separate positive and negative points.
+
 if Wtxi >0 Yi =+1  if   Wtxi <0 Yi =-1 , LR is decision based.
 Optimal W =  argMax(sum (YiWtXi)) 
-LR can have many planes, we need best Wi, best plane. this is optimization problem.
+LR can have many planes, we need best Wi, best plane. This is optimization problem.
 Wtxi is the distance from Xi to the plane.
-YiWtxi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
-
+YiW(transpose)xi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
 Outlier can mess up the data.   
 
 ### Squashing in LR:
