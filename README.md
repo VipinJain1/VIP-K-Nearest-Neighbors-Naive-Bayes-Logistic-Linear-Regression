@@ -78,7 +78,8 @@ knn we need whole data at run time.
 ## Scikit-learn  very good doc. 
 https://scikit-learn.org/stable/modules/naive_bayes.html
 
-### *****************************Logistic Regression (LR)**************************************
+### Logistic Regression (LR)
+
 It is a classification technique.  Geometric based, NB was probabilistic based. 
 It is a classification technique.  Geometric based, NB was probabilistic based. 
 LR can be derived by geometric, probability or loss-function, but best is geometric. There are three ways to interperate.  
@@ -89,11 +90,12 @@ NB has conditional independence. K-NN is neighbor based. In LR, plane is divided
 Task is to find a plane, that will separate positive and negative points.
 
 if Wtxi >0 Yi =+1  if   Wtxi <0 Yi =-1 , LR is decision based.
-Optimal W =  argMax(sum (YiWtXi)) 
+Optimal W =  argMax(sum (YiWtXi))  --> Get Max value. 
 LR can have many planes, we need best Wi, best plane. This is optimization problem.
 Wtxi is the distance from Xi to the plane.
 YiW(transpose)xi : +ve so plane is correctly classifies. if <0 means incorrectly classifies. 
-Outlier can mess up the data.   
+Outlier can mess up the data. In LR we would want as many as positive values for positive place and as many as negative values for negative plane. This the optimization function of LR. Find out the optmimal W (max values of + and -)
+
 
 ### Squashing in LR:
 instead of using signed distrubition directly, if signed dist is small, use as it, and if singed dist is large maker it smaller value. 
@@ -104,7 +106,6 @@ instead of using signed distrubition directly, if signed dist is small, use as i
 
 
 
- 
 
 
   
