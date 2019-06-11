@@ -156,13 +156,41 @@ https://scikit-learn.org/stable/modules/naive_bayes.html
    
    One way is geometry and simple algebra. another way is probability and third way is loss minimization.
    
-   Naice Bayes:
+   Naive Bayes:
     (i) if features are real valued, we had gaussian dist.
     (ii) Class label is random var.
     
     Read book  https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf
     (iii) X and Y conditionalyy independent. 
     Linear Regression = Gaussian Naive Bayes  + Bernouli
+    
+    ### Loss minimization interpretation of LR:
+    
+    Remember  W* = ArgMin(Sum (Log (1+exp (-Yi W(t)Xi))))  from 1 to n
+    Zi = Yi W(t) Xi = Yi * F(Xi)
+    I want to minimize incorrectly classified points. that is the whole point of classification. 
+    I want to minimize my loss. +1 to incorrectly classified  and 0 for correctly classified.  so we want to minimize the loss that is       the loss function. 
+      W* = argmin(sum(0_1 loss(Xi,Yi,w)))) 
+      
+     F(x) is differentiable if x is continious, in order to solve loss function. 
+     
+     ### HyperParameter Search/Optimization:
+     Lambda =0, Overfitting
+     Lambda =1 , Underfitting.
+     Lambda in LR is a real value. Find right lambda.
+     One way is grid search like brute force technique:
+     take limited set of numbers of lambda
+     search lambda in >= [0.0001,0.01, 0.1,1,10.....100...1000], some folks search lamda in very wide window. 
+     Check cross validation error for each lambda, that should be minimal. 
+     
+     
+     
+     
+      
+     
+   
+    
+
     
    
    
