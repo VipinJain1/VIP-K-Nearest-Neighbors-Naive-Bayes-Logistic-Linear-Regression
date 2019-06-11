@@ -106,7 +106,9 @@ We use Sigmoid Function.
 
 Try Plot(1/1+e^-x)  to see the impact. X is the signed distance. 
 sigma (0) = 0.5
-Values are in between 0 to 1. so it comes to probabilitcs interpration. 
+Values are in between 0 to 1 instead of -infinity to infinity. So, it comes to probabilistic interpretation.
+
+
 
 
  
