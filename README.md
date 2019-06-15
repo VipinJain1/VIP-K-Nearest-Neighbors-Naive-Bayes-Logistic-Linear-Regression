@@ -219,7 +219,7 @@ If features have multicollinear dependency, we cannot use abs (weight) of featur
 #### Perturbation Technique: use for detecting multicollinearity.
 in a matrix, add some small noise on cell value, and train your logistic regression again after adding some noise, if weights values are different that means features are colinear.
 
-
+#### Nonlinear planes: Convert to linear before applying logistic regression.
 
 
 
