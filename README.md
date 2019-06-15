@@ -10,6 +10,9 @@ https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logist
 
 ## Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
 
+### Logistic regression:
+https://www.philippeadjiman.com/blog/2017/12/09/deep-dive-into-logistic-regression-part-1/
+
 # Basic Concepts:
 
 ## Over Fitting:
@@ -185,7 +188,51 @@ https://scikit-learn.org/stable/modules/naive_bayes.html
      search lambda in >= [0.0001,0.01, 0.1,1,10.....100...1000], some folks search lamda in very wide window. 
      Check cross validation error for each lambda, that should be minimal. 
      
-     
+    
+  ### Column/Feature Standradization:
+    
+   Matrix:  Calculate mean and std dev of as matrix.  this is Standardization. Even is logistic regression it is mandatory to perform column Standardization. if two features are on multiple scale, we need to standardize columns/features. It is also called mean centric or scale. So, all features are brought to the same scale.
+   
+  #### Feature Importance & Model Interpretability:
+We have d features and optimal weight vector for each feature. so we get f1,f2,f3...fn  features and weight w1,w2,w3...wn.
+assume we have all features independent as we know logistic regression from probabilistic stand point is - Gaussian naive base + Bernoulli distribution on class labels. If all features are independent then - we can get feature importance using Wj's. But in realistic it is not possible. 
+
+Using K-NN :- We could get feature importance using forward feature section method.
+in Naive base: - we could tell feature imp using probability:  using P(Xi|Y=+1) -> feature which are important.
+in LR :-  we get  |Wj| abs value of wt corresponding to feature J. If abs value of Wj is large, then it's contribution to WtXj is large.
+So, if |Wj| is large then (Wt Xi) is large so absolute value matters. even if W is negative it will impact because of abs value.
+Example:
+
+If we want to predict male or female, male +1 and female -1. we can get hair length.
+since most women will have longer hair then men.
+
+So, if weight (hair length) increases, probability of negative class increases since female is -1.
+If another example of feature height, male is generally having more height then female. so, probability of height of positive (male) class label will also increase.
+
+#### Model Interpretability:
+
+If I want to tell model is sensible or not,  if Yq is +1 or -1, class label is positive or negative. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+    
+    
+    
      
      
       
