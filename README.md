@@ -210,8 +210,12 @@ So, if weight (hair length) increases, probability of negative class increases s
 If another example of feature height, male is generally having more height then female. so, probability of height of positive (male) class label will also increase.
 
 #### Model Interpretability:
+If I want to tell model is sensible or not, if Yq is +1 or -1, class label is positive or negative.  I can pick up most important feature which has absolute weight value which is large. I can pick those features only. I can interpret based on weight if that person is male or female based on length of hair for example.  if height is tall and hair length is short, I can say person is male.
 
-If I want to tell model is sensible or not,  if Yq is +1 or -1, class label is positive or negative. 
+
+
+
+
 
 
 
