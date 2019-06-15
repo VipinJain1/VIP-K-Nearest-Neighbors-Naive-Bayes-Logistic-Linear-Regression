@@ -212,14 +212,12 @@ If another example of feature height, male is generally having more height then 
 #### Model Interpretability:
 If I want to tell model is sensible or not, if Yq is +1 or -1, class label is positive or negative.  I can pick up most important feature which has absolute weight value which is large. I can pick those features only. I can interpret based on weight if that person is male or female based on length of hair for example.  if height is tall and hair length is short, I can say person is male.
 
+#### Colinearity or MultiColinearity:
+If F(i) = A (Fj) + B so we can say Fi and Fj are colinear.
+If features have multicollinear dependency, we cannot use abs (weight) of feature. Implement dependencies and weight vector will also change.
 
-
-
-
-
-
-
-
+#### Perturbation Technique: use for detecting multicollinearity.
+in a matrix, add some small noise on cell value, and train your logistic regression again after adding some noise, if weights values are different that means features are colinear.
 
 
 
