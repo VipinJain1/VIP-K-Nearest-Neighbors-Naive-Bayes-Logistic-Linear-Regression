@@ -221,6 +221,13 @@ in a matrix, add some small noise on cell value, and train your logistic regress
 
 #### Nonlinear planes: Convert to linear before applying logistic regression.
 
+## The Most important aspects of ML/AI:
+(i)   Feature engineering.
+(ii)  Bias - variance 
+(iii) Data Analysis & Visualization.
+
+Examples:
+XOR data - convert to linear plane before applying LR.
 
 
 
