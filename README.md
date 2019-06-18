@@ -14,6 +14,7 @@ https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logist
 #### Very good quick tricky guide:
 
 https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
+https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
 
 
 
