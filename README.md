@@ -17,7 +17,7 @@ https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighb
 
 
 
-## Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
+#### Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
 
 ### Logistic regression:
 https://www.philippeadjiman.com/blog/2017/12/09/deep-dive-into-logistic-regression-part-1/
