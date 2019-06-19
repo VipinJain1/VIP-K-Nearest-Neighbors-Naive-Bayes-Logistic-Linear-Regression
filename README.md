@@ -1,14 +1,24 @@
+### Note:
+Any help needed to execute the code or understanding the code, please send me message. I will soon upload the input data and expected output data.
+More updates coming soon. Meanwhile Please look at the code. I have added some comments over there.  
+
 Welcome to the VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression wiki!
 
 # VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression
 https://github.com/VipinJain1/VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression/wiki/Some-Quick-Tips
 
-Good Links:
+#### Good Links:
 http://shatterline.com/blog/2013/09/12/not-so-naive-classification-with-the-naive-bayes-classifier/
 https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logistic-regression
 
+#### Very good quick tricky guide:
 
-## Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
+https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
+https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
+
+
+
+#### Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
 
 ### Logistic regression:
 https://www.philippeadjiman.com/blog/2017/12/09/deep-dive-into-logistic-regression-part-1/
