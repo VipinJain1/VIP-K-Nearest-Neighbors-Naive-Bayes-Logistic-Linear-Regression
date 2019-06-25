@@ -241,6 +241,39 @@ in a matrix, add some small noise on cell value, and train your logistic regress
 Examples:
 XOR data - convert to linear plane before applying LR.
 
+### Performance Measurement of Models:
+
+Accuracy = # Correctly classified points/Total number of points in D test
+
+##### Issues with accuracy:
+
+(i) Case of imbalanced data. 
+
+### Confusion Matrix: 
+Does not take probability scores.
+Binary Classification task:two class (0,1)
+
+TPR = TP/P
+TNR = TN/N
+FPR = FT/N
+FNR = FN/P
+
+Precesion:TP/TP+FP
+Recall = TP/P
+f1 sCORE= 2* (Pre*Recall)/(Pre+Recall)
+
+### AUC Curve:
+
+
+
+
+
+
+
+
+
+
+
 
 
 
