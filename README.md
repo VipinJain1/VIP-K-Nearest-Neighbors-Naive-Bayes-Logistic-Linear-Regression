@@ -4,6 +4,16 @@ More updates coming soon. Meanwhile Please look at the code. I have added some c
 
 Welcome to the VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression wiki!
 
+## Note: How to convert categorical feature to numerical feature:
+(i) Simply convert the string to number by either some ranking or order. if you have set of strings, give a number to each other. Not a good solution. As this way, number will not take any sense.  
+(ii) One hot encoding. - Very popular.  one-hot encoding, I say I have set of 5 colors, it will replace one feature to 5 features of binary vector of a size of number of distinct colors. It is a sparse and large vector.   Hair color is a categorical feature as it has multiple category. If I need to figure out from Country, height of the person, I can do that.  Example 200 countries, I can create matrix of 200 features. Each column will have mean of the height of the people per country. so, I can replace the feature of country with avg height. so, I introduce new 200 features by one country feature.  so, I convert categorical feature to a set of numeric features.
+(iii) BoW - Bag of words.  - Another popular. And very similar to one-hot encoding.  
+(iv)  Using Domain Knowledge:  Given a country, replace food taste or food quality with number.  
+(iv) Mean replacement. 
+
+Try all the above algorithms to see which one works  for your data.
+
+
 # VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression
 https://github.com/VipinJain1/VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression/wiki/Some-Quick-Tips
 
@@ -16,6 +26,8 @@ https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logist
 https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
 https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
 
+### Refer This - Quick Informative:
+https://www.kaggle.com/mayu0116/hyper-parameters-tuning-of-dtree-rf-svm-knn
 
 
 #### Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
@@ -238,6 +250,39 @@ in a matrix, add some small noise on cell value, and train your logistic regress
 
 Examples:
 XOR data - convert to linear plane before applying LR.
+
+### Performance Measurement of Models:
+
+Accuracy = # Correctly classified points/Total number of points in D test
+
+##### Issues with accuracy:
+
+(i) Case of imbalanced data. 
+
+### Confusion Matrix: 
+Does not take probability scores.
+Binary Classification task:two class (0,1)
+
+TPR = TP/P
+TNR = TN/N
+FPR = FT/N
+FNR = FN/P
+
+Precesion:TP/TP+FP
+Recall = TP/P
+f1 sCORE= 2* (Pre*Recall)/(Pre+Recall)
+
+### AUC Curve:
+
+
+
+
+
+
+
+
+
+
 
 
 
