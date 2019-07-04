@@ -30,6 +30,9 @@ https://towardsdatascience.com/comparative-study-on-classic-machine-learning-alg
 ### Refer This - Quick Informative:
 https://www.kaggle.com/mayu0116/hyper-parameters-tuning-of-dtree-rf-svm-knn
 
+### KNN - Train Model, Confusion Matirx, Prediction:
+https://medium.com/@kbrook10/day-11-machine-learning-using-knn-k-nearest-neighbors-with-scikit-learn-350c3a1402e6
+
 
 #### Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
 
