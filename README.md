@@ -1,8 +1,9 @@
+Welcome to the VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression wiki!
+
 ### Note:
 Any help needed to execute the code or understanding the code, please send me message. I will soon upload the input data and expected output data.
 More updates coming soon. Meanwhile Please look at the code. I have added some comments over there.  
 
-Welcome to the VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression wiki!
 ## Note: How to convert categorical feature to numerical feature:
 (i) Simply convert the string to number by either some ranking or order. if you have set of strings, give a number to each other. Not a good solution. As this way, number will not take any sense.  
 (ii) One hot encoding. - Very popular.  one-hot encoding, I say I have set of 5 colors, it will replace one feature to 5 features of binary vector of a size of number of distinct colors. It is a sparse and large vector.   Hair color is a categorical feature as it has multiple category. If I need to figure out from Country, height of the person, I can do that.  Example 200 countries, I can create matrix of 200 features. Each column will have mean of the height of the people per country. so, I can replace the feature of country with avg height. so, I introduce new 200 features by one country feature.  so, I convert categorical feature to a set of numeric features.
@@ -22,13 +23,18 @@ https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logist
 
 #### Very good quick tricky guide:
 
-https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
-https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
-https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
+https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/                                                                            
+https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761                               
+https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222                                      
 
 ### Refer This - Quick Informative:
 https://www.kaggle.com/mayu0116/hyper-parameters-tuning-of-dtree-rf-svm-knn
 
+### KNN - Train Model, Confusion Matirx, Prediction:
+https://medium.com/@kbrook10/day-11-machine-learning-using-knn-k-nearest-neighbors-with-scikit-learn-350c3a1402e6
+
+### Cross validation with accuracy Score:
+https://github.com/cjscholl/KNN_Text/blob/master/text_classification/analysis/knn.py
 
 #### Any model I use, I need to clean, train, test data. All are very common in all the APIs.scikit-lean has super brilliant libs to use. So really for ML engineer code to write is like nothing. What you need is to understand the real data and make changes in the data accordingly. Just most of the work is in modelling data. Fixing underfit or overfit data - super critical to have data normalized.
 
