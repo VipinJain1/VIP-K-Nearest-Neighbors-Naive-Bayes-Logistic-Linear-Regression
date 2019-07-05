@@ -13,7 +13,6 @@ More updates coming soon. Meanwhile Please look at the code. I have added some c
 
 Try all the above algorithms to see which one works  for your data.
 
-
 # VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression
 https://github.com/VipinJain1/VIP-K-Nearest-Neighbors-Naive-Bayes-Logistic-Regression/wiki/Some-Quick-Tips
 
