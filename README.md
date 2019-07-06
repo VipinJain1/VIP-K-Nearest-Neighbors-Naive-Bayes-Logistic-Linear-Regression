@@ -29,6 +29,10 @@ https://towardsdatascience.com/comparative-study-on-classic-machine-learning-alg
 ### Refer This - Quick Informative:
 https://www.kaggle.com/mayu0116/hyper-parameters-tuning-of-dtree-rf-svm-knn
 
+### Read this as well:
+http://www.cs.nthu.edu.tw/~shwu/courses/ml/labs/08_CV_Ensembling/08_CV_Ensembling.html
+
+
 ### KNN - Train Model, Confusion Matirx, Prediction:
 https://medium.com/@kbrook10/day-11-machine-learning-using-knn-k-nearest-neighbors-with-scikit-learn-350c3a1402e6
 
