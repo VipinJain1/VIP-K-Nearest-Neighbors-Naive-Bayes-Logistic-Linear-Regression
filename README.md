@@ -21,7 +21,7 @@ http://shatterline.com/blog/2013/09/12/not-so-naive-classification-with-the-naiv
 https://stats.stackexchange.com/questions/188416/discriminant-analysis-vs-logistic-regression
 
 #### Very good quick tricky guide:
-
+https://medium.com/datadriveninvestor/k-nearest-neighbors-knn-7b4bd0128da7
 https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/                                                                            
 https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761                               
 https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222                                      
