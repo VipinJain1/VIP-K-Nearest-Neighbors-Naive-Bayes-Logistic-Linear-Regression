@@ -26,6 +26,7 @@ https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
 https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761                               
 https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222  
 https://www.ritchieng.com/machine-learning-multinomial-naive-bayes-vectorization/
+https://www.ritchieng.com/logistic-regression/
 
 ### Refer This - Quick Informative:
 https://www.kaggle.com/mayu0116/hyper-parameters-tuning-of-dtree-rf-svm-knn
